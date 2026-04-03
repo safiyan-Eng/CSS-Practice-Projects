@@ -1,0 +1,139 @@
+/* ================= GLOBAL ================= */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+header {
+    background: #003366;
+    padding: 15px 0;
+    color: white;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+section {
+    padding: 60px 0;
+}
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+/* ================= ADMISSION LAYOUT ================= */
+
+.admission-container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+/* ================= FORM ================= */
+
+.admission-form {
+    flex: 1 1 55%;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.admission-form input,
+.admission-form select,
+.admission-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+/* Focus Effect */
+.admission-form input:focus,
+.admission-form select:focus,
+.admission-form textarea:focus {
+    border-color: #0077ff;
+    box-shadow: 0 0 5px rgba(0,119,255,0.4);
+}
+/* Submit Button */
+.admission-form button {
+    padding: 12px;
+    background: #0077ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+/* Button Hover */
+.admission-form button:hover {
+    background: #005fcc;
+}
+/* ================= CONTACT INFO ================= */
+
+.contact-info {
+    flex: 1 1 40%;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.contact-info h3 {
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.map {
+    margin-top: 20px;
+}
+@media (max-width: 768px) {
+
+    .admission-container {
+        flex-direction: column;
+    }
+
+    .admission-form,
+    .contact-info {
+        flex: 1 1 100%;
+    }
+}
